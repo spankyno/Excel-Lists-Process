@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://excel-lists-process.pages.dev/sitemap.xml

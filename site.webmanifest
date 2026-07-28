@@ -1,0 +1,14 @@
+{
+  "name": "Excel Lists Process",
+  "short_name": "ExcelLP",
+  "description": "Combina y suma, o compara en paralelo, listas de Excel y CSV directamente en el navegador.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#EEF1EA",
+  "theme_color": "#2F5D50",
+  "lang": "es",
+  "icons": [
+    { "src": "/assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

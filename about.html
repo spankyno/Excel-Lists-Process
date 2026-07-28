@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Acerca de Excel Lists Process | Procesos, Stack y Autor</title>
+<meta name="description" content="Cómo funciona Excel Lists Process: consolidación con suma y comparación en paralelo de listas de Excel/CSV, stack tecnológico sin frameworks y datos sobre el autor." />
+<meta name="author" content="Aitor Sánchez Gutiérrez" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://excel-lists-process.pages.dev/about.html" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Excel Lists Process" />
+<meta property="og:title" content="Acerca de Excel Lists Process | Procesos, Stack y Autor" />
+<meta property="og:description" content="Cómo funciona Excel Lists Process: consolidación con suma y comparación en paralelo de listas de Excel/CSV, stack tecnológico y autor." />
+<meta property="og:url" content="https://excel-lists-process.pages.dev/about.html" />
+<meta property="og:image" content="https://excel-lists-process.pages.dev/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="es_ES" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Acerca de Excel Lists Process" />
+<meta name="twitter:description" content="Cómo funciona Excel Lists Process: procesos, stack tecnológico y autor." />
+<meta name="twitter:image" content="https://excel-lists-process.pages.dev/og-image.png" />
+
+<!-- Favicon -->
+<link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/assets/icons/favicon.ico" sizes="any" />
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#2F5D50" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" href="/assets/css/styles.min.css" as="style">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/styles.min.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "Acerca de Excel Lists Process",
+  "url": "https://excel-lists-process.pages.dev/about.html",
+  "isPartOf": {
+    "@type": "WebApplication",
+    "name": "Excel Lists Process",
+    "url": "https://excel-lists-process.pages.dev/"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Aitor Sánchez Gutiérrez",
+    "url": "https://aitorsanchez.pages.dev"
+  },
+  "sameAs": [
+    "https://aitorsanchez.pages.dev",
+    "https://aitorhub.vercel.app"
+  ]
+}
+</script>
+</head>
+<body>
+
+<main>
+  <div class="page">
+
+    <header class="masthead about-hero">
+      <a href="/" class="stamp-link" aria-label="Excel Lists Process — inicio"><div class="stamp">EX · LP</div></a>
+      <h1>Acerca de Excel Lists Process</h1>
+      <p class="subtitle">Qué hace la herramienta, cómo procesa tus datos, con qué tecnología está construida y quién la mantiene.</p>
+      <div class="rule-double"></div>
+      <nav class="top-nav" aria-label="Navegación principal">
+        <a href="/">Herramienta</a> · <a href="/about.html">Acerca de</a>
+      </nav>
+    </header>
+
+    <section class="step">
+      <h2><span class="step-no">1</span>Los dos procesos</h2>
+      <div class="about-grid">
+        <div>
+          <h3 style="font-family:var(--font-display); margin-top:0;">Consolidar y sumar</h3>
+          <p>Une varias listas (hasta 5) en una sola, agrupando filas cuyo <strong>Campo Clave</strong> coincide y sumando el <strong>Campo a Calcular</strong> entre todas ellas.</p>
+          <ul class="feature-list">
+            <li>El Campo Clave y el Campo a Calcular se eligen una sola vez, no por archivo, y deben existir con el mismo nombre en todos los archivos cargados; si no hay columnas comunes, la aplicación avisa y no permite continuar.</li>
+            <li>El resultado conserva todas las columnas comunes a los archivos (además de la clave) y añade una columna nueva con la suma total.</li>
+            <li>Las claves que solo existen en un archivo se añaden igualmente, con su propio valor.</li>
+            <li>El resultado se ordena de forma ascendente por el Campo Clave de manera predeterminada, y puede reordenarse después con hasta dos criterios.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="font-family:var(--font-display); margin-top:0;">Comparar en paralelo</h3>
+          <p>Coloca las columnas completas de cada archivo una junto a otra, alineadas por un único <strong>Campo Clave</strong> común a todos los archivos.</p>
+          <ul class="feature-list">
+            <li>Cuando la clave coincide entre archivos, sus filas se combinan en una sola: primero todas las columnas del Archivo 1, luego las del Archivo 2, y así sucesivamente.</li>
+            <li>Si una clave solo existe en un archivo, las columnas del resto quedan vacías en esa fila.</li>
+            <li>No se usa ningún Campo a Calcular: se muestran los datos originales de cada archivo, sin sumar nada.</li>
+            <li>El resultado también se ordena ascendente por el Campo Clave de forma predeterminada, con la misma opción de reordenar por hasta dos criterios.</li>
+          </ul>
+        </div>
+      </div>
+      <p class="hint">En ambos procesos, la comparación de claves ignora mayúsculas y espacios en los extremos, para evitar falsos "no coincide" por errores de formato.</p>
+    </section>
+
+    <section class="step">
+      <h2><span class="step-no">2</span>Privacidad y procesamiento</h2>
+      <p>Todo el procesamiento —lectura de archivos, comparación, suma, ordenación y exportación— ocurre dentro de tu propio navegador. Ningún archivo ni dato se envía a ningún servidor: no hay backend, no hay base de datos, no hay almacenamiento en la nube. Cerrar la pestaña equivale a borrar todo.</p>
+    </section>
+
+    <section class="step">
+      <h2><span class="step-no">3</span>Stack tecnológico</h2>
+      <ul class="stack-list">
+        <li>HTML5 semántico</li>
+        <li>CSS con variables, sin framework</li>
+        <li>JavaScript vanilla (ES2020+)</li>
+        <li>SheetJS (xlsx) — vendorizado localmente</li>
+        <li>Carga diferida (lazy load) del motor de lectura</li>
+        <li>Sitio 100% estático, sin build step</li>
+        <li>Alojado en Cloudflare Pages</li>
+        <li>Código fuente en GitHub</li>
+        <li>Sin cookies, sin analítica de terceros</li>
+      </ul>
+      <p class="hint" style="margin-top:14px;">Deliberadamente no usa ningún framework de frontend: al ser una interfaz de un único flujo de trabajo, HTML y JavaScript sin dependencias de ejecución cargan y responden más rápido que una capa de framework, y el motor de Excel/CSV (la única pieza pesada) solo se descarga cuando realmente se necesita.</p>
+    </section>
+
+    <section class="step">
+      <h2><span class="step-no">4</span>Características</h2>
+      <ul class="feature-list">
+        <li>Hasta 5 archivos Excel (.xlsx, .xls) o CSV por proceso.</li>
+        <li>Carga por selección de archivo, arrastrar y soltar, o pegado directo desde el portapapeles (botón dedicado o Ctrl+V).</li>
+        <li>Detección automática de columnas comunes entre archivos, con aviso claro cuando no es posible continuar.</li>
+        <li>Vista previa de los datos cargados antes de procesar.</li>
+        <li>Ordenación configurable por hasta dos criterios (campo y dirección ascendente/descendente).</li>
+        <li>Exportación a .xlsx, .csv o copiado directo al portapapeles.</li>
+        <li>Interfaz accesible: estados de foco visibles, contraste cuidado, soporte de teclado.</li>
+        <li>Diseño responsive, utilizable desde móvil.</li>
+      </ul>
+    </section>
+
+    <section class="step">
+      <h2><span class="step-no">5</span>Autor</h2>
+      <div class="author-card">
+        <div class="stamp">EX · LP</div>
+        <p>Excel Lists Process está creada y mantenida por <strong>Aitor Sánchez Gutiérrez</strong>. Puedes leer más artículos en el <a href="https://aitorsanchez.pages.dev/" rel="noopener">blog</a>, ver el resto de proyectos en <a href="https://aitorhub.vercel.app/" rel="noopener">Aitor Hub</a>, o ponerte en <a href="https://aitor-blog-contacto.vercel.app/" rel="noopener">contacto</a>.</p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Excel Lists Process</h4>
+      <ul>
+        <li><a href="/about.html">Acerca de</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Autor</h4>
+      <ul>
+        <li><a href="https://aitor-blog-contacto.vercel.app/" rel="noopener">Contacto</a></li>
+        <li><a href="https://aitorsanchez.pages.dev/" rel="noopener">Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Más</h4>
+      <ul>
+        <li><a href="https://aitorhub.vercel.app/" rel="noopener">Más apps</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="copyright">Aitor Sánchez Gutiérrez © 2026 — Reservados todos los derechos</p>
+</footer>
+
+</body>
+</html>

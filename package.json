@@ -1,0 +1,20 @@
+{
+  "name": "excel-lists-process",
+  "version": "1.0.0",
+  "description": "Combina y suma, o compara en paralelo, listas de Excel y CSV directamente en el navegador.",
+  "private": true,
+  "author": "Aitor Sánchez Gutiérrez",
+  "license": "UNLICENSED",
+  "scripts": {
+    "vendor:xlsx": "cp node_modules/xlsx/dist/xlsx.full.min.js assets/vendor/xlsx.full.min.js",
+    "build:css": "cleancss -o assets/css/styles.min.css assets/css/styles.css",
+    "build:js": "terser assets/js/app.js -o assets/js/app.min.js --compress --mangle",
+    "build": "npm run build:css && npm run build:js",
+    "serve": "npx serve ."
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "terser": "^5.49.0",
+    "xlsx": "^0.18.5"
+  }
+}
