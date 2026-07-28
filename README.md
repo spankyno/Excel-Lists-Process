@@ -11,7 +11,7 @@ Sitio 100% estático (HTML + CSS + JS vanilla), pensado para cargar y responder 
 
 Ambos procesos permiten reordenar el resultado por hasta **dos criterios** (campo + dirección ascendente/descendente), y exportar a `.xlsx`, `.csv` o copiar al portapapeles.
 
-## Estructura del repositorio
+## Estructura del repositorio 
 
 ```
 .
